@@ -2,7 +2,7 @@
 
 ## 📚 Sumário
 1. [Descrição do Projeto](#descrição-do-projeto)
-2. [Funcionalidades](#funcionalidades)
+2. [Funcionalidades](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/Funcionalidades.md)
 3. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 4. [Pré-requisitos](#pré-requisitos)
 5. [Configuração e Instalação](#configuração-e-instalação)
