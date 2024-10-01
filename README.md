@@ -5,8 +5,8 @@
 2. [Funcionalidades](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/Funcionalidades.md)
 3. [Tecnologias Utilizadas](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/Tecnologias.md)
 5. [Configuração e Instalação](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/ConfigEInstall.md)
-6. [Estrutura do Projeto]([#estrutura-do-projeto](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/EstruturaProjeto.md))
-7. [Configuração do ChatGPT e Venom]([#configuração-do-chatgpt-e-venom](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/ConfigDoChatEVenom.md))
+6. [Estrutura do Projeto](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/EstruturaProjeto.md)
+7. [Configuração do ChatGPT e Venom](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/ConfigDoChatEVenom.md)
 8. [Como Usar](https://github.com/arthurmassimetti/WPP_BOT_NODE/blob/main/Docs/ComoUsar.md)
 
 
