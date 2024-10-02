@@ -2,7 +2,7 @@
 const axios = require('axios');
 
 // Definindo a chave da API da OpenAI (substitua pela sua)
-const apiKey = 'sk-k5ir7pncspIurf82_379gLYx9Zr-S1hdZ-jogdaJa7T3BlbkFJaYyIyiGL_MwZE2qRPDdW92RgjscmjY5fzu-HitF9oA';
+const apiKey = 'SUA_CHAVE_API';
 
 // Função para fazer uma chamada à API do ChatGPT
 async function callChatGPT(prompt) {
