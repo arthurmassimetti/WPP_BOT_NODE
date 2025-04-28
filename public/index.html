@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <title>Testador de Mensagens - ChatGPT</title>
+   <style>
+      body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; }
+      #resposta { white-space: pre-wrap; margin-top: 10px; padding: 10px; background: #fff; border-radius: 5px; }
+   </style>
+</head>
+<body>
+   <h1>Envie uma mensagem para o ChatGPT</h1>
+   <input type="text" id="mensagem" placeholder="Digite aqui" size="50"/>
+   <button onclick="enviar()">Enviar</button>
+   <div id="resposta"></div>
+
+   <script>
+      async function enviar() {
+         const msg = document.getElementById("mensagem").value;
+         const respostaDiv = document.getElementById("resposta");
+         respostaDiv.innerText = "⏳ Processando...";
+
+         const res = await fetch('/api/message', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: msg })
+         });
+         const data = await res.json();
+         respostaDiv.innerText = `🤖 Resposta:\n${data.resposta}`;
+      }
+   </script>
+</body>
+</html>

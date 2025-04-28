@@ -9,9 +9,12 @@
   "author": "Arthur Massimetti",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.7.7",
-    "express": "^4.21.0",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0",
     "node": "^22.9.0",
+    "puppeteer": "^24.6.0",
     "sharp": "^0.33.5",
     "venom-bot": "^5.1.0"
   }
