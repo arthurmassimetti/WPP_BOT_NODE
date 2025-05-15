@@ -9,25 +9,22 @@ const header = {
 
 /**
  * 
- * @param {string} userMessage - Mensagem do usuário
- * @param {Array} historico - Histórico anterior da conversa (pode ser vazio)
+ * @param {string} userMessage
+ * @param {Array} historico
  */
 const getChatGPTResponse = async (userMessage, historico = []) => {
    try {
       const messages = [];
 
-      // Envia o prompt do treinamento só uma vez, no início da conversa
       if (historico.length === 0) {
          messages.push({
             role: "system",
-            content: treinamento // aqui entra seu texto do treinamento
+            content: treinamento
          });
       }
 
-      // Adiciona histórico se existir
       messages.push(...historico);
 
-      // Adiciona a nova mensagem do usuário
       messages.push({ role: "user", content: userMessage });
 
       const response = await axios.post("https://api.openai.com/v1/chat/completions", {
@@ -40,7 +37,7 @@ const getChatGPTResponse = async (userMessage, historico = []) => {
       return response.data.choices[0]?.message.content;
    } catch (error) {
       console.error("Erro na API:", error.response?.data || error.message);
-      return "❌ Erro ao obter resposta da IA.";
+      return "Erro ao obter resposta da IA.";
    }
 };
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizzaria - Cardápio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6e3;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #e63946;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .cardapio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .pizza {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .pizza h3 {
+      margin: 0 0 10px;
+    }
+
+    .pizza p {
+      margin: 5px 0;
+    }
+
+    .botao {
+      background-color: #457b9d;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .botao:hover {
+      background-color: #1d3557;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍕 Pizza da Larica</h1>
+    <p>Veja nosso cardápio e peça pelo WhatsApp!</p>
+  </header>
+
+  <div class="container">
+    <div class="cardapio">
+      <div class="pizza">
+        <h3>Mussarela</h3>
+        <p>Queijo mussarela, molho de tomate, orégano</p>
+        <p><strong>R$ 40,00</strong></p>
+        <a class="botao" href="https://wa.me/5511989169513?text=Olá,+ tudo bem? Gostaria de realizar um pedido!" target="_blank">Pedir</a>
+      </div>
+      <div class="pizza">
+        <h3>Calabresa</h3>
+        <p>Calabresa, cebola, azeitona, molho</p>
+        <p><strong>R$ 45,00</strong></p>
+        <a class="botao" href="https://wa.me/11-989169513?text=Olá,+ tudo bem? Gostaria de realizar um pedido!" target="_blank">Pedir</a>
+      </div>
+      <div class="pizza">
+        <h3>Frango com Catupiry</h3>
+        <p>Frango desfiado, catupiry, molho de tomate</p>
+        <p><strong>R$ 47,00</strong></p>
+        <a class="botao" href="https://wa.me/5511989169513?text=Olá,+ tudo bem? Gostaria de realizar um pedido!" target="_blank">Pedir</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
